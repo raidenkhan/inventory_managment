@@ -56,8 +56,8 @@ function SideBar() {
         <SideBarLInk href='/inventory' icon={Archive} label='Inventory' isCollapsed={isSidebarCollapsed}/>
         <SideBarLInk href='/products' icon={Clipboard} label='Products' isCollapsed={isSidebarCollapsed}/>
         <SideBarLInk href='/users' icon={User} label='Users' isCollapsed={isSidebarCollapsed}/>
-        <SideBarLInk href='/Settings' icon={SlidersHorizontal} label='Settings' isCollapsed={isSidebarCollapsed}/>
-        <SideBarLInk href='/Expenses' icon={CircleDollarSign} label='Expenses' isCollapsed={isSidebarCollapsed}/>
+        <SideBarLInk href='/settings' icon={SlidersHorizontal} label='Settings' isCollapsed={isSidebarCollapsed}/>
+        <SideBarLInk href='/expenses' icon={CircleDollarSign} label='Expenses' isCollapsed={isSidebarCollapsed}/>
         </div>
         {/* {FOOTER} */}
         <div className={`${isSidebarCollapsed?"hidden":"block"} mb-10`}>

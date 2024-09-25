@@ -5,7 +5,9 @@ import cors from "cors";
 import helmet   from "helmet";
 import morgan from "morgan";
 import dashboardRoutes from "./routes/dashboardRoutes";
-// route imports
+import productRoutes from './routes/productRoutes';
+import usersRoutes from './routes/userRoutes'
+import expenseRoutes from './routes/expenseRoutes'
 // configurations
 dotenv.config();
 const app=express();
@@ -21,7 +23,9 @@ app.use(cors())
 // server
 app.use("/dashboard",dashboardRoutes);
 app.use("/",dashboardRoutes)
-
+app.use('/products',productRoutes)
+app.use('/users',usersRoutes)
+app.use('/expenses',expenseRoutes)
 const port=process.env.PORT || 3001;
 app.listen(port,()=>{
     console.log( `Server running on port ${port}`)
